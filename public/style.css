@@ -71,6 +71,10 @@ li {
   align-items: center;
 }
 
+.task-actions {
+  margin-left: 10px; /* Adicionando espaçamento entre tarefas e botões */
+}
+
 a {
   text-decoration: none;
   color: #007bff;

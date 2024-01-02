@@ -25,9 +25,12 @@
     <section id="tasks">
         <ul>
             <% tasksList.forEach((task) => { %>
-                <li><%= task.task %> | <%= task.date.toLocaleDateString("pt-BR") %> 
-                    <a href="/getById/<%= task._id %>/update">Editar</a>
-                    <a href="/getById/<%= task._id %>/delete">Apagar</a>
+                <li>
+                    <%= task.task %> | <%= task.date.toLocaleDateString("pt-BR") %> 
+                    <div class="task-actions">
+                        <a href="/getById/<%= task._id %>/update">Editar</a>
+                        <a href="/getById/<%= task._id %>/delete">Apagar</a>
+                    </div>
                 </li>
             <% }) %>
         </ul>
